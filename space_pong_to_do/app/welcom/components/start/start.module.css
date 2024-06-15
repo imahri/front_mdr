@@ -1,0 +1,108 @@
+.container{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+
+.title{
+    font-size: 10rem;
+    font-weight: 600;
+    margin-left: 5rem;
+    transition: 0.5s;
+}
+
+.subtitle{
+    margin-left: 5rem;
+    margin-top: -1.8%;
+    font-size: 20px;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+.description{
+    width: 75%;
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: 3%;
+    transition: 0.5s;
+}
+
+.starting{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+    width: 100%;
+    transition: 0.5s;
+}
+
+.but{
+    padding: 10px 20px;
+    margin-left: 15px;
+    border-radius: 10px;
+    font-size: 25px;
+    transition: 0.5s;
+}
+
+.sup{
+    margin-right: 30px;
+    border: 2px white solid;
+    transition: 0.5s;
+}
+
+.sup:hover{
+    border: 2px white solid;
+    background: white;
+    color: rgb(13, 13, 13);
+}
+
+@media (max-width: 1100px){
+    .title{
+        font-size: 5rem;
+        margin-left: 5rem;
+    }
+    .subtitle{
+        margin-left: 5rem;
+        font-size: 10px;
+    }
+    .description{
+        font-size: 15px;
+        width: 100%;
+    }
+    .but{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 600px){
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .title{
+        margin-top: 6%;
+        font-size: 3rem;
+        font-weight: 600;
+        margin-left: 0;
+    }
+    .subtitle{
+        margin-left: 0rem;
+    }
+    .description{
+        width: 100%;
+        font-size: 10px;
+        margin-top: 50%;
+    }
+    .but{
+        font-size: 10px;
+
+    }
+}
