@@ -11,6 +11,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .card{
@@ -25,10 +26,11 @@
     gap:30px;
 }
 
+
 .layer{
     flex: 6;
     height: 10;
-    width: 100%;
+    /* width: 100%; */
 }
 
 .container_logo{
@@ -47,6 +49,9 @@
 
 .im{
     margin-top: 15px;
+    width: 150px;
+    height: 0.50px;
+    opacity: 0.5;
 }
 
 .logo_im{
@@ -80,6 +85,21 @@
     padding: 15px 15px;
 }
 
+.email:-webkit-autofill,
+.email:-webkit-autofill:hover,
+.email:-webkit-autofill:focus,
+.email:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px transparent inset !important;
+    -webkit-text-fill-color: #ffffff !important;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+.email:-moz-autofill {
+    box-shadow: 0 0 0 30px transparent inset !important;
+    -moz-text-fill-color: #000 !important;
+}
+
+
 .signup{
     padding: 15px;
     background: transparent;
@@ -90,7 +110,7 @@
 
 .signup:hover{
     padding: 15px;
-    background: white;
+    background: #FBFBEE;
     border: 2px solid white;
     color: #564636;
 
@@ -107,6 +127,28 @@
 
 }
 
+.change_in{
+    margin-top: 10px;
+    width: 90%;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-weight: 600;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: 0.5s;
+}
+.change_in:hover{
+    text-decoration: underline;
+    opacity: 1;
+}
+
+.inside{
+    margin-top: 10px;
+}
+
 .Singin{
     color: white;
     padding: 0 5px;
@@ -118,13 +160,108 @@
     cursor: pointer;
 }
 
+.container_choice{
+    background: red;
+    top:0;
+}
+
+.gof_container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+.google{
+    padding: 15px;
+    background: #FBFBEE;
+    color: black;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.school{
+    padding: 15px;
+    background: #FBFBEE;
+    color: black;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.google:hover{
+    padding: 15px;
+    background: #564636;
+    color: #FBFBEE;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.school:hover{
+    padding: 15px;
+    background: #564636;
+    color: #FBFBEE;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.google_logo{
+    background: url('./google.svg');
+    background-size: cover;
+    background-position: center;
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+}
+
+.school_logo{
+    background: url('./42.svg');
+    background-size: cover;
+    background-position: center;
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+}
+
+@keyframes move_up {
+    0% {
+        bottom: -70%;
+    }
+    30% {
+        bottom: -45%;
+    }
+    60%{
+        bottom: -30%;
+    }
+    80%{
+        bottom: -15%;
+    }
+    100%{
+        bottom: 0%;
+    }
+}
+
 
 @media (max-width: 600px){
     .card{
         position: absolute;
-        bottom: 0;
         height: 70%;
         width: 100%;
         border-radius: 15px 15px 0 0;
+        bottom: 0%;
+        animation: move_up 0.5s ease-in-out alternate;
+    }
+}
+
+@media (max-height: 1000px) and (max-width: 600px){
+    .card{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        border-radius: 15px 15px 0 0;
+        /* top: 100%; */
+        
     }
 }

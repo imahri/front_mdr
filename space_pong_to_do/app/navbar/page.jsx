@@ -1,5 +1,5 @@
 "use client"
-import Nav from "./components/nabar"
+import Nav from "./components/Snabar"
 
 const Navbar = () =>{
   return <Nav />;

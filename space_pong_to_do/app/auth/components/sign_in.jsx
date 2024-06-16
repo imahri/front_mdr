@@ -7,7 +7,7 @@ import { MdOutlineLock } from "react-icons/md";
 import { FaLongArrowAltRight } from "react-icons/fa";
 
 
-const SignUp = () => {
+const SignIn = () => {
     return <div className={`${style.layer} ${style.inputs}`}>
 
         <div className={style.fields}>
@@ -19,22 +19,21 @@ const SignUp = () => {
                 <MdOutlineLock size={25} color="rgba(0, 0, 0, 0.6)"/>
                 <input className={style.email} placeholder="Password" type="password" />
             </div>
-            <div className={style.holders}>
-                <MdOutlineLock size={25} color="rgba(0, 0, 0, 0.6)"/>
-                <input className={style.email} placeholder="Confirm your password" type="password" />
-            </div>
             <div className={`${style.holders} ${style.signup} `}>
-                Sing up
+                Sing in
             </div>
         </div>
-            <div className={`${style.change} `}>
-                <p>Already have an account? </p>
-                <div className={`${style.both_l}`}>
-                    <span className={`${style.Singin}`}>Sign in</span><FaLongArrowAltRight  color="white"/>
-                </div>
+            <div className={`${style.change_in} `}>
+                <p>Forgot password?</p>
             </div>
             <Choice />
+            <div className={`${style.change} `}>
+                <p>Don’t have an account? </p>
+                <div className={`${style.both_l}`}>
+                    <span className={`${style.Singin}`}>Sign up</span>
+                </div>
+            </div>
     </div>
 }
 
-export default SignUp;
+export default SignIn;

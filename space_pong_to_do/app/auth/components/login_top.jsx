@@ -1,7 +1,7 @@
 "use client"
 import style from "./login.module.css"
 import Image from "next/image";
-import li from "../../picture/line2.png"
+import li from "../../picture/fline.png"
 import logo from "../../picture/logo.png"
 
 const TopLogin = () => {
