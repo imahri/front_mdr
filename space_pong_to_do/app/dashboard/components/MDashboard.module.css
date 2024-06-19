@@ -1,0 +1,65 @@
+.container{
+    position: relative;
+    width: 100%;
+    background: red;
+    display: flex;
+    flex-direction: row;
+    color: black;
+}
+
+.layer{
+    width: 50%;
+}
+
+.dashboard{
+    background: gold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+.game{
+    background: yellowgreen;
+
+}
+
+.card_holders{
+    width: 100%;
+    background: brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+
+}
+
+@media (max-width: 1700px){
+    .container{
+        flex-direction: column;
+    }
+    .layer{
+        width: 100%;
+    }
+}
+
+@media (max-width: 1200px){
+    .container{
+        flex-direction: column;
+    }
+    .layer{
+        width: 100%;
+    }
+}
+@media (max-width: 700px){
+    .container{
+        background: blueviolet;
+    }
+    /* .dashboard{
+        flex-direction: column;
+    } */
+    .card_holders{
+        flex-direction: column;
+    }
+}
