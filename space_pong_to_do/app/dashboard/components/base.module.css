@@ -1,0 +1,148 @@
+
+
+.search_section{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+    top: 0;
+}
+
+.email{
+    width: 90%;
+    background: transparent;
+    outline: none;
+    padding: 15px 15px;
+    
+}
+
+.friend_title{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.holders{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    border: 2px solid #48433E;
+    margin-top: 7px;
+}
+
+.im{
+    width: 25px;
+}
+
+.imr{
+    width: 40px;
+    height: 40px;
+}
+
+.imp{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size:cover ;
+}
+.friend_container{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    height: 82%;
+    overflow: auto;
+}
+
+
+
+.player_info{
+    width: 100%;
+    background: rgb(101, 72, 44);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px 25px;
+    align-items: center;
+}
+
+.player_info_data{
+    display: flex;
+    align-items: center;
+}
+
+.player_pic{
+    width: 60px;
+    height: 60px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    outline: 1px solid white;
+
+    overflow: hidden;
+}
+
+.player_username{
+    font-size: 30px;
+    font-weight: 500;
+    margin: 0 5px;
+}
+
+.player_title{
+    font-size: 15px;
+    font-weight: 300;
+    margin: 0 5px;
+    color: #FFCE9D;
+}
+
+.text_player{
+    display: flex;
+    align-items: center;
+}
+
+
+
+@media (max-width: 1700px){
+    .text_player{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1500px){
+    .content{
+        flex-direction: column;
+    }
+    .Friend_list{
+        width: 400px;
+        margin-top: 0px;
+    }
+
+}
+
+@media (max-width: 1000px){
+    .content{
+        flex-direction: column;
+    }
+    .Friend_list{
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 400px){
+    .text_player{
+        display: none;
+        visibility: hidden;
+    }
+}
+
+
+@media (min-width: 2200px){
+    .Friend_list{
+        width: 500px;
+    }
+}

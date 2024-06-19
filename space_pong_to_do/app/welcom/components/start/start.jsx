@@ -1,5 +1,6 @@
 "use client"
 import style from "./start.module.css"
+import Link from "next/link";
 
 const Start = () => {
     return <div className={style.container}>
@@ -10,7 +11,9 @@ const Start = () => {
             <p>Come along for an unforgettable adventure of space competition and celestial marvels.</p>
         </div>
         <div className={style.starting}>
-            <button className={`${style.but} ${style.sup}`}>Get Started</button>
+            <Link href="/auth/sign_in">
+                <button className={`${style.but} ${style.sup}`}>Get Started</button>
+            </Link>
         </div>
     </div>;
 }

@@ -31,3 +31,11 @@ body {
     text-wrap: balance;
   }
 }
+
+
+@font-face {
+  font-family: 'StartServe';
+  src: url('../fonts/Dreamscape.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
