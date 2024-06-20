@@ -6,8 +6,6 @@ import SearchPlayer from "./Search"
 const FriendCont = () => {
     return <div className={style.lists}>
         <div className={style.Friend_list}>
-            
-            <SearchPlayer />
             <FriendField />
 
         </div>

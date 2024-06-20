@@ -13,7 +13,8 @@ import Image from "next/image";
 import ContFriend from "./container_friend"
 import Field from "./Friend_Field"
 import SearchPlayer from "./Search"
-import Cards from "./card"
+import CardF from "./card"
+import CardL from "./cardLeader"
 
 const BaseExec = () => {
     return <div>
@@ -22,15 +23,16 @@ const BaseExec = () => {
         <div className={styles.container}>
             <div className={`${styles.layer} ${styles.dashboard}`}>
                 <div className={styles.text_holders}>
-                    <h1>Congratulations, Celestial Master!</h1>
-                    <p>You've ascended to the highest echelons of cosmic mastery, basking in the brilliance of the Sun itself. As a true luminary of the cosmos, your journey knows no bounds. Shine on, and may your light guide others to new celestial heights!</p>
+                    <h1 className={styles.text_ti}>Congratulations, Celestial Master!</h1>
+                    <p className={styles.text_de}>You've ascended to the highest echelons of cosmic mastery, basking in the brilliance of the Sun itself. As a true luminary of the cosmos, your journey knows no bounds. Shine on, and may your light guide others to new celestial heights!</p>
                 </div>
                 <div className={styles.card_holders}>
-                    <Cards />
-                    <Cards />
+                    <CardF />
+                    <CardL />
                 </div>
             </div>
-            <div className={`${styles.layer} ${styles.dashboard}`}>
+            
+            {/* <div className={`${styles.layer} ${styles.dashboard}`}>
                 <div className={styles.text_holders}>
                     <h1>Congratulations, Celestial Master!</h1>
                     <p>You've ascended to the highest echelons of cosmic mastery, basking in the brilliance of the Sun itself. As a true luminary of the cosmos, your journey knows no bounds. Shine on, and may your light guide others to new celestial heights!</p>
@@ -39,7 +41,7 @@ const BaseExec = () => {
                     <Cards />
                     <Cards />
                 </div>
-            </div>
+            </div> */}
 
             {/* <div className={`${styles.layer} ${styles.game}`}>
                 game

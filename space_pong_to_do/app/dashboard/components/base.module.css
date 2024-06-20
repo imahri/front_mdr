@@ -9,6 +9,23 @@
     flex-direction: column;
     margin-bottom: 30px;
     top: 0;
+
+}
+
+.player_info_status_L{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.player_info_status_P{
+    font-weight: 500;
+    font-size: 20px;
+}
+.player_info_status_T{
+    font-weight: 500;
+    font-size: 20px;
+
 }
 
 .email{
@@ -22,6 +39,7 @@
 .friend_title{
     font-size: 1.5rem;
     font-weight: 500;
+    margin: 10px 0;
 }
 
 .holders{
@@ -62,12 +80,12 @@
 
 .player_info{
     width: 100%;
-    background: rgb(101, 72, 44);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2px 25px;
+    padding: 5px 15px;
     align-items: center;
+    margin: 5px 0;
 }
 
 .player_info_data{
@@ -84,6 +102,7 @@
     outline: 1px solid white;
 
     overflow: hidden;
+    margin-left: 5px;
 }
 
 .player_username{
@@ -93,7 +112,7 @@
 }
 
 .player_title{
-    font-size: 15px;
+    font-size: 10px;
     font-weight: 300;
     margin: 0 5px;
     color: #FFCE9D;
@@ -101,7 +120,8 @@
 
 .text_player{
     display: flex;
-    align-items: center;
+    align-items: flex-end;
+    height: fit-content;
 }
 
 
@@ -130,7 +150,10 @@
     .Friend_list{
         width: 100%;
     }
-
+    .player_info_status_T,
+    .player_info_status_P{
+        font-size: 15px;
+    }
 }
 
 @media (max-width: 400px){
