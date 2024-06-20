@@ -10,6 +10,7 @@
     width: 50%;
 }
 
+
 .dashboard{
     display: flex;
     align-items: center;
@@ -18,9 +19,27 @@
     align-items: center;
     flex-direction: column;
 }
+
 .game{
-    background: yellowgreen;
+    position: relative;
+    /* background: yellowgreen; */
+    /* height: 90vh; */
 }
+
+/* hover */
+
+
+
+.ssv{
+    width: 100%;
+    position: relative;
+}
+
+.elem{
+    position: absolute;
+    bottom: 0;
+}
+
 
 .text_holders{
     margin: 45px 0 0 0;
@@ -44,6 +63,25 @@
 
 .text_de{
     font-size: 1.5rem;
+}
+
+
+.cpr {
+    width: 300px;  /* Adjust width as needed */
+    height: 300px; /* Adjust height as needed */
+    background: red; /* Adjust background color as needed */
+    clip-path: polygon(0 0, 100% 0, 64% 100%, 0% 100%);
+    border-radius: var(--br-91xl);
+  }
+
+@media (max-width: 1900px){
+    .game{
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+        flex-direction: column;
+    }
+
 }
 
 @media (max-width: 1700px){
