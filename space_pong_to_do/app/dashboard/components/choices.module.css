@@ -1,7 +1,7 @@
 .container{
     margin: 50px auto 0 auto;
     width: 95%;
-    height: 750px;
+    height: 700px;
     position: relative;
 }
 
@@ -9,7 +9,7 @@
     position: absolute;
     /* width: 65.5%; */
     width: 68%;
-    height: 100%;
+    height: 99%;
 
     background-position: center;
     background-size: cover;
@@ -20,6 +20,10 @@
     transition: 0.6s;
 }
 
+.containerS{
+    visibility: hidden;
+    display: none;
+}
 
 
 .base .box:hover {
@@ -33,8 +37,8 @@
 
 .box2{
     position: absolute;
-    width: 37.9%;
-    height: 49%;
+    width: 38%;
+    height: 46.5%;
     background-position: center;
     background-size: cover;
     top: 0;
@@ -48,10 +52,10 @@
 .box3{
     position: absolute;
     width: 48.5%;
-    height: 50%;
+    height: 46%;
     background-position: center;
     background-size: cover;
-    bottom: 0;
+    bottom: 5%;
     right: 0;
     filter:drop-shadow(0px 0px 5px wheat) brightness(50%);
     cursor: pointer;
@@ -64,6 +68,7 @@
     font-size: 4rem;
     font-weight: 700;
     pointer-events:none;
+    transition: 0.6s;
 }
 
 .vs{
@@ -81,6 +86,69 @@
     left: 5%;
 }
 
+
+.card_box{
+    width:95%;
+    height: 100px;
+    background: red;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s;
+    border: 1px solid #FFCE9D;
+    cursor: pointer;
+}
+
+.back1{
+    background: url('../../picture/tournement11.png');
+    background-position: center;
+    background-size: cover;
+    transition: 0.5s;
+}
+.back2{
+    background: url('../../picture/bot1.png');
+    background-position: center;
+    background-size: cover;
+    transition: 0.5s;
+}
+.back3{
+    background: url('../../picture/1vs1.png');
+    background-position: center;
+    background-size: cover;
+    transition: 0.5s;
+}
+
+.over{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+.card_box:hover{
+    border: 0;
+}
+.card_box:hover .des{
+    color: rgba(255, 255, 255, 0);
+    text-shadow: 0 0 1px white;
+    font-size: 45px;
+    transform: rotate(5deg);
+}
+.card_box:hover .over{
+    background: rgba(0, 0, 0, 0);
+    font-size: 100px;
+}
+
+@media (max-width: 2300px){
+    .container{
+        height: 700px;
+    }
+}
+
 @media (max-width: 2200px){
 
     .des{
@@ -90,8 +158,7 @@
 
 @media (max-width: 2000px){
     .container{
-        height: 700px;
-        /* background: rgb(175, 196, 133); */
+        height: 600px;
     }
 }
 
@@ -242,5 +309,18 @@
     .container{
         display: none;
         visibility: hidden;
+    }
+    .containerS{
+        display:block;
+        visibility: visible;
+        margin: auto;
+        position: relative;
+        width: 95%;
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 15px;
     }
 }

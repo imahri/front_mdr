@@ -9,6 +9,7 @@ import bg2 from "../../picture/hard_card/trf2.png"
 import bg3 from "../../picture/hard_card/trf3.png"
 import box from "../../picture/hard_card/box.png"
 import Choice from "./choices"
+import Achivement from "./achivement"
 
 
 const BaseExec = () => {
@@ -26,7 +27,8 @@ const BaseExec = () => {
             </div>
             <div className={`${styles.layer} ${styles.game}`}>
                     <Choice />
-                    dasdas
+                    <Achivement />
+                    
             </div>
             
         </div>

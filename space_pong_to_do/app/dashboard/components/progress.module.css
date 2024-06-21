@@ -1,0 +1,27 @@
+.progresse{
+    padding: 20px;
+}
+
+.hopl{
+    width: 100%;
+    background: #62605A;
+    border-radius: 5px;
+    padding: 3px;
+    overflow: hidden;
+}
+
+
+.exp{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    color: #FFCE9D;
+    
+}
+
+@media (max-width: 700px) {
+    .exp{
+        font-size: 10px;       
+    }   
+}

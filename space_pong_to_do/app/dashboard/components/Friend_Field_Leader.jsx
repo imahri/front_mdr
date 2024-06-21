@@ -21,8 +21,8 @@ const FriendField = () => {
                         src={Pic}
                         height={100}
                         width={300}
-                        className={`${style.imp}`}
                         alt="Profile random image"
+                        className={`${style.imp}`}
                     />
                 </div>
 
@@ -36,8 +36,8 @@ const FriendField = () => {
                     src={R5}
                     height={100}
                     width={300}
-                    className={`${style.imr}`}
                     alt="Profile random image"
+                    className={`${style.imr}`}
                 />
                 <p className={style.player_info_status_P}>14558XP</p>
             </div>

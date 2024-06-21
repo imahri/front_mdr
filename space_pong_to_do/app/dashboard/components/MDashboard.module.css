@@ -22,12 +22,8 @@
 
 .game{
     position: relative;
-    /* background: yellowgreen; */
-    /* height: 90vh; */
+    height: fit-content;
 }
-
-/* hover */
-
 
 
 .ssv{
@@ -52,7 +48,7 @@
     justify-content: center;
     align-items: flex-end;
     gap: 25px;
-    height: 850px;
+    height: 800px;
 }
 
 .text_ti{
@@ -67,14 +63,14 @@
 
 
 .cpr {
-    width: 300px;  /* Adjust width as needed */
-    height: 300px; /* Adjust height as needed */
-    background: red; /* Adjust background color as needed */
+    width: 300px;
+    height: 300px;
+    background: red;
     clip-path: polygon(0 0, 100% 0, 64% 100%, 0% 100%);
     border-radius: var(--br-91xl);
   }
 
-@media (max-width: 1900px){
+@media (max-width: 2200px){
     .game{
         display: flex;
         justify-content: center;
