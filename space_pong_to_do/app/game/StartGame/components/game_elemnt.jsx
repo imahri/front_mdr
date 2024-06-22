@@ -1,9 +1,7 @@
 "use client"
 import style from "./start_game.module.css"
 import Image from "next/image";
-import BoardMain from "../../../picture/pic1.jpeg"
-import Profile_pic from "../../../picture/imahri.jpeg"
-import RankPic from "../../../picture/rank5.png"
+import BoardMain from "../../../picture/pic2.jpeg"
 import Player_info from "./player"
 
 const GameEl = () => 

@@ -1,9 +1,9 @@
 "use client"
-import Pack from "./components/base"
+import Pcko from "./components/base"
 
 const Chat = () =>{
   return <div>
-      <Pack />
+      <Pcko />
     </div>;
 }
 
