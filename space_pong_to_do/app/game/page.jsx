@@ -1,5 +1,5 @@
 "use client"
-import Start from "./components/start/start"
+import Start from "./components/matchMaking/start"
 
 
 const Welcom = () =>{

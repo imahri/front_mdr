@@ -12,7 +12,52 @@
     height: 600px;
     border-radius: 15px;
     background: rgb(0, 187, 255);
+    border: 3px solid wheat;
+    overflow: hidden;
+    position: relative;
     transition: 0.5s;
+}
+
+.Board_Main{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.paddle{
+    width: 20px;
+    height: 20%;
+    background: white;
+    border-radius: 20px;
+    position: absolute;
+    z-index: 10;
+}
+
+.Starter{
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: 'StartServe';
+    font-size: 3rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.Starter:hover{
+    text-shadow: 0 0 5px white;
+}
+
+.First{
+    top: 10%;
+    left: 1%;
+}
+
+.Second{
+    bottom: 10%;
+    right: 1%;
 }
 
 .title{
@@ -133,6 +178,13 @@
         height: 100px;
     }
     .title{
+        font-size: 2rem;
+    }
+    .paddle{
+        width: 10px;
+        height: 20%;
+    }
+    .Starter{
         font-size: 2rem;
     }
 }

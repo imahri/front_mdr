@@ -1,0 +1,217 @@
+.container{
+    width: 100%;
+}
+
+.res{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.res_holder{
+    border: 1px solid white;
+    border-radius: 15px;
+    font-family: 'StartServe';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+    gap: 5%;
+    padding: 0 60px;
+}
+
+.Pause{
+    font-family: 'StartServe';
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.Pause_icon{
+    width: 30px;
+    height: 40px;
+}
+
+.holder{
+    margin: auto;
+    position: relative;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+
+.Board_Main{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: contain;
+}
+
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3);
+    transition: 0.5s;
+}
+.play{
+    position: absolute;
+    bottom: 10%;
+    left: 50;
+    transform: translate(0,-50%);
+    text-align: center;
+    display: flex;
+    font-size: 2rem;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.overlayp{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'StartServe';
+    font-size: 7rem;
+    transition: 0.5s;
+}
+
+.box{
+    width: 400px;
+    height: 650px;
+    background: rgba(0, 0, 0, 0,5);
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.first, .third{
+    width: 200px;
+    flex-grow: 1;
+}
+.fourth, .fithe{
+    height: 400px;
+    flex-grow: 1;
+}
+
+.second{
+    border: 2px solid white;
+    flex-grow: 3;
+    position: relative;
+    margin: auto;
+}
+
+.second_time{
+    display: none;
+    visibility: hidden;
+}
+
+.profile_info{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 30px 0 0 0 ;
+    align-items: center;
+    flex-direction: column;
+}
+
+.picture_img{
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1.5px solid white;
+}
+
+.player_usename{
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.profile_title{
+    font-size: 1rem;
+    color: #FFCE9E;
+}
+
+.picture_rank{
+    width: 130px;
+    padding: 30px 0;
+    filter: drop-shadow(0 0 20px #ffdf9e);
+}
+
+@media (max-width: 900px) {
+    .holder{
+        flex-direction: column;
+    }
+
+    .first, .third {
+        order: initial;
+        align-self: auto;
+        visibility: hidden;
+        display: none;
+    }
+
+    .second {
+        width: 95%;
+        height: 550px;
+    }
+
+    .second_time{
+        visibility: visible;
+        display: flex;
+        width: 95%;
+        justify-content: space-between;
+        /* gap: 10px; */
+    }
+    .res_holder{
+        font-size: 2rem;
+        padding: 0 25px;
+    }
+    .Pause{
+        font-size: 1.8rem;
+        gap: 5px;
+    }
+    .Pause_icon{
+        width: 20px;
+        height: 25px;
+    }
+    .overlayp{
+        font-size: 3rem;
+    }
+    .picture_img{
+        width: 100px;
+        height: 100px;
+    }
+    .player_usename{
+        font-size: 1.5rem;
+    }
+    .profile_title{
+        font-size: 0.7rem;
+    }
+    .picture_rank{
+        width: 70px;
+        padding: 15px 0;
+    }
+}
