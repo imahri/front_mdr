@@ -1,10 +1,10 @@
 "use client"
 import style from "./base.module.css"
-import LooP from "../../picture/icons8-search-128.png"
-import Image from "next/image"
 import Search from "./search_freind"
 import Freind from "./freind_label"
 import ProfileChat from "./profile_chat"
+import MessageLabel from "./chatin"
+
 
 
 
@@ -50,10 +50,14 @@ const BaseExec = () => {
                     <div className={`${style.body_chat}`}>
                         {/* chat */}
                         <div className={`${style.msg}`}>
-                            aalll
+                            {/* <p>top</p>
+                            <p>bottom</p> */}
+                            <MessageLabel/>
+                            <MessageLabel/>
+
                         </div>
                         <div className={`${style.chat_sender}`}>
-                            sender
+                            <p>sender</p>
                         </div>
                     </div>
                 </div>

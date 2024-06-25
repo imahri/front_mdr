@@ -1,0 +1,49 @@
+.container{
+    position: relative;
+    width: 100%;
+    /* background: red; */
+    display: flex;
+    gap: 5px;
+}
+
+.msg_tm{
+    margin-top: 2px;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+
+.msg_time{
+    font-size: 0.7rem;
+    color: #B7AA9C;
+    align-self: flex-end;
+    font-weight: 200;
+}
+
+.msg_holder{
+    width: 100%;
+    background: #b7aa9ca4;
+    font-size: 0.7rem;
+    word-wrap: break-word;
+    word-break: break-all;
+    white-space: normal;
+    color: black;
+    border-radius: 0 15px 15px 15px;
+    padding: 10px;
+}
+
+.pi_holder{
+    width: 40px;
+    border-radius: 50%;
+}
+
+.im{
+    min-width: 30px;
+    border-radius: 50%;
+}
+
+@media (max-width:1200px){
+    .msg_tm{
+        width: 55%;
+    }
+}

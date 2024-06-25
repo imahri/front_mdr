@@ -53,6 +53,7 @@
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    gap: 15px;
 }
 
 .part_two{
@@ -73,7 +74,7 @@
 
 
 .friend_list{
-    /* background: red; */
+    margin-right: 10px;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -86,24 +87,30 @@
 
 .body_chat{
     position: relative;
-    background: red;
-    margin-top: 10px;
-    height: 100%;
+    margin-top: 15px;
+    height: 90%;
+}
+
+
+.msg{
+    /* background: burlywood; */
+    height: 90%;
+    display: flex;
+    gap: 10px;
+    /* align-items: center;
+    justify-content: space-between; */
+    flex-direction: column;
 }
 
 .chat_sender{
-    position: absolute;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
     background: yellowgreen;
     width: 100%;
-    height: fit-content;
-    bottom: 0%;
+    height: 10%;
 }
-
-.chat_sender{
-    padding: 15px;
-    text-align: center;
-}
-
 
 /*  */
 
@@ -112,14 +119,12 @@
     .holder{
         width: 85%;
     }
-    /* .friend{
-        background: rgb(255, 123, 0);
-    } */
 }
 
 @media (max-width: 2200px){
     .friend{
         flex-grow: 0.7;
+        min-width: 400px;
     }
 }
 
@@ -137,6 +142,7 @@
 @media (max-width: 1150px){
     .friend{
         flex-grow: 0.5;
+        min-width: 400px;
     }
 }
 
@@ -157,5 +163,13 @@
     }
     .body_chat{
         height: 400px;
+    }
+
+    .msg{
+        height: 82%;
+    }
+
+    .chat_sender{
+        height: 18%;
     }
 }
