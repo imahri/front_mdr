@@ -4,6 +4,7 @@ import LooP from "../../picture/icons8-search-128.png"
 import Image from "next/image"
 import Search from "./search_freind"
 import Freind from "./freind_label"
+import ProfileChat from "./profile_chat"
 
 
 
@@ -27,6 +28,15 @@ const BaseExec = () => {
                         <Freind />
                         <Freind />
                         <Freind />
+                        <Freind />
+                        <Freind />
+                        <Freind />
+                        <Freind />
+                        <Freind />
+                        <Freind />
+                        <Freind />
+                        <Freind />
+                        <Freind />
                     </div>
                 </div>
 
@@ -34,7 +44,18 @@ const BaseExec = () => {
 
 
                 <div className={`${style.chat}`}>
-                    chat
+                    <div className={`${style.profile_chat}`}>
+                        <ProfileChat />
+                    </div>
+                    <div className={`${style.body_chat}`}>
+                        {/* chat */}
+                        <div className={`${style.msg}`}>
+                            aalll
+                        </div>
+                        <div className={`${style.chat_sender}`}>
+                            sender
+                        </div>
+                    </div>
                 </div>
 
             </div>

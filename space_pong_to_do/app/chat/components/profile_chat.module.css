@@ -1,0 +1,46 @@
+.container{
+    width: 100%;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+
+
+.pi_holder{
+    width: 80px;
+    margin: 10px;
+    overflow: hidden;
+    border-radius: 50%;
+    outline: 1px solid white;
+    transition: 0.5s;
+}
+
+.username{
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.container:hover{
+    background: linear-gradient(90deg, #9cb7b418 0%, #b7aa9c00 80%);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+}
+
+
+.container:hover .pi_holder{
+    filter: drop-shadow(0 0 3px rgb(0, 191, 255));
+}
+
+
+
+.container:hover .username{
+    filter: drop-shadow(0 0 1px rgb(0, 191, 255));
+}
+
