@@ -1,0 +1,49 @@
+.container{
+    width: 100%;
+    /* background: rgb(90, 0, 142); */
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.container:hover{
+    background: #b7aa9c18;
+}
+
+.pi_holder{
+    width: 80px;
+    margin: 10px;
+    overflow: hidden;
+    border-radius: 50%;
+    outline: 1px solid white;
+}
+
+.pa_holder{
+    width: 70%;
+    overflow: hidden;
+}
+
+.username{
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+
+.lst_msg_holder{
+    display: flex;
+    gap: 2px;
+}
+
+.lst_msg{
+    color: #B7AA9C;
+    width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+.lst_msg_time{
+    color: #B7AA9C;
+}

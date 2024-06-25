@@ -1,12 +1,124 @@
 .container{
     width: 100%;
-    height: 92vh;
-    background: red;
+    margin-top: 50px;
 }
 
 .holder{
-    width: 100%;
-    height: 100%;
-    background: yellowgreen;
+    
+    position: relative;
+    width: 98%;
+    height: fit-content;
+    margin: auto;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.part_one{
+    position: relative;
+    width: 68%;
+    height: 1000px;
+    display: flex;
+    gap: 10px;
+    flex: 2;
+
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.friend{
+    height: 100%;
+    flex-grow: 0.7;
+    /* background: rgb(50, 205, 169); */
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid white; */
+    border-radius: 15px 15px 0 15px;
+    overflow: hidden;
+}
+
+.chat{
+    height: 100%;
+    flex-grow: 2;
+    background: rgb(205, 159, 50);
+    /* border: 2px solid white; */
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.part_two{
+    position: relative;
+    width: 400px;
+    height: 1000px;
+    background: blueviolet;
+    text-align: center;
+    border-radius:15px;
+    border: 2px solid white;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+
+/*  */
+
+.friend_list{
+    /* background: red; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+
+
+/*  */
+
+
+@media (min-width: 2200px){
+    .holder{
+        width: 85%;
+    }
+    /* .friend{
+        background: rgb(255, 123, 0);
+    } */
+}
+
+@media (max-width: 2200px){
+    .friend{
+        flex-grow: 0.7;
+    }
+}
+
+@media (max-width: 1550px){
+    .part_one{
+        width: 100%;
+        height: 750px;
+    }
+
+    .part_two{
+        width: 100%;
+    }
+}
+
+@media (max-width: 1150px){
+    .friend{
+        flex-grow: 0.5;
+    }
+}
+
+@media (max-width: 800px){
+    .part_one{
+        flex-direction: column;
+        height: fit-content;
+    }
+    .friend{
+        height: 45%;
+        overflow: auto;
+    }
+    .friend_list{
+        height: 300px;
+    }
 }
