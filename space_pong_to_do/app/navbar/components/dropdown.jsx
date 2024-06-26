@@ -6,8 +6,9 @@ import { CiUser } from "react-icons/ci";
 import { RiHomeLine } from "react-icons/ri";
 import { IoSettingsOutline } from "react-icons/io5";
 import { IoLogOutOutline } from "react-icons/io5";
+import Link from "next/link";
 
-const DropDown = () => {
+const DropDown = ({dropdown, setDropdown}) => {
     return <div className={`${style.dropdown_item}`}>
             <div className={`${style.user_info} ${style.spsp}`}>
 
@@ -38,16 +39,26 @@ const DropDown = () => {
                 <CiUser size={25} color="rgb(109, 77, 45)"/>
                 <p>Profile</p>
             </div>
-            
-            <div className={`${style.fix_but} ${style.spsp}`}> 
-                <RiHomeLine size={25} color="rgb(109, 77, 45)"/>
-                <p>Dashboard</p>
-            </div>
-            
-            <div className={`${style.fix_but} ${style.spsp}`}> 
-                <IoSettingsOutline size={25} color="rgb(109, 77, 45)"/>
-                <p>Settings</p>
+
+            <Link href={"/dashboard"}>
+                <div className={`${style.fix_but} ${style.spsp}`} 
+                    onClick={()=> {
+                        setDropdown(!dropdown)
+                    }}>
+                    <RiHomeLine size={25} color="rgb(109, 77, 45)"/>
+                    <p>Dashboard</p>
                 </div>
+            </Link>
+            
+            <Link href={"/setting"}>
+            <div className={`${style.fix_but} ${style.spsp}`}
+                onClick={()=> {
+                    setDropdown(!dropdown)
+                }}>
+                    <IoSettingsOutline size={25} color="rgb(109, 77, 45)"/>
+                    <p>Settings</p>
+                </div>
+            </Link>
             <div className={`${style.spsp}`}>
             <div className={`${style.line_sp}`}></div>
             </div>

@@ -3,7 +3,9 @@ import style from "./base.module.css"
 import Search from "./search_freind"
 import Freind from "./freind_label"
 import ProfileChat from "./profile_chat"
-import MessageLabel from "./chatin"
+import MessageLabel_in from "./chatin"
+import MessageLabel_out from "./chatout"
+import Sender from "./sender"
 
 
 
@@ -48,23 +50,30 @@ const BaseExec = () => {
                         <ProfileChat />
                     </div>
                     <div className={`${style.body_chat}`}>
-                        {/* chat */}
                         <div className={`${style.msg}`}>
-                            {/* <p>top</p>
-                            <p>bottom</p> */}
-                            <MessageLabel/>
-                            <MessageLabel/>
-
+                            <MessageLabel_in/>
+                            <MessageLabel_out/>
+                            <MessageLabel_in/>
+                            <MessageLabel_in/>
+                            <MessageLabel_out/>
+                            <MessageLabel_out/>
+                            <MessageLabel_out/>
+                            <MessageLabel_in/>
+                            <MessageLabel_in/>
+                            <MessageLabel_out/>      
+                            <MessageLabel_in/>
                         </div>
                         <div className={`${style.chat_sender}`}>
-                            <p>sender</p>
+                            <Sender />
                         </div>
                     </div>
                 </div>
 
             </div>
+
+            
             <div className={`${style.part_two}`}>
-                dlasgfklafglkdlaglk
+
             </div>
             
         </div>

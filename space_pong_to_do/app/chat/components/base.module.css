@@ -27,28 +27,31 @@
     border: 2px solid white;
     border-radius: 20px;
     padding: 20px;
-    overflow: hidden;
+    /* overflow: hidden; */
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
 }
 
 .friend{
-    height: 100%;
     flex-grow: 0.7;
-    /* background: rgb(50, 205, 169); */
+    width: 500px;
+    min-width: 400px;
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     /* border: 2px solid white; */
     border-radius: 15px;
     padding:15px;
     overflow: hidden;
 }
 
+.friend_search{
+    width: 100%;
+}
+
 .chat{
     height: 100%;
     flex-grow: 2;
-    /* background: rgba(50, 205, 171, 0.348); */
-    /* border: 2px solid white; */
     border-radius: 15px;
     overflow: hidden;
     display: flex;
@@ -93,13 +96,11 @@
 
 
 .msg{
-    /* background: burlywood; */
-    height: 90%;
+    height: 85%;
     display: flex;
     gap: 10px;
-    /* align-items: center;
-    justify-content: space-between; */
     flex-direction: column;
+    overflow: auto;
 }
 
 .chat_sender{
@@ -107,7 +108,7 @@
     text-align: center;
     justify-content: center;
     align-items: center;
-    background: yellowgreen;
+    /* background: yellowgreen; */
     width: 100%;
     height: 10%;
 }
@@ -121,19 +122,23 @@
     }
 }
 
-@media (max-width: 2200px){
+/* @media (max-width: 2200px){
     .friend{
         flex-grow: 0.7;
-        min-width: 400px;
+        min-width: 300px;
     }
-}
+} */
 
 @media (max-width: 1550px){
     .part_one{
+        /* border: 0px; */
         width: 100%;
         height: 750px;
     }
-
+    .friend{
+        flex-grow: 0.5;
+        min-width: 350px;
+    }
     .part_two{
         width: 100%;
     }
@@ -142,7 +147,8 @@
 @media (max-width: 1150px){
     .friend{
         flex-grow: 0.5;
-        min-width: 400px;
+        width: 100%;
+        min-height: 500px;
     }
 }
 
@@ -150,13 +156,17 @@
     .part_one{
         flex-direction: column;
         height: fit-content;
+        border: 0px;
     }
     .friend{
         height: 45%;
-        overflow: auto;
+        border: 2px solid white;
     }
     .chat{
         height:55%;
+        border: 2px solid white;
+        padding: 0 10px;
+        
     }
     .friend_list{
         height: 300px;
@@ -171,5 +181,19 @@
 
     .chat_sender{
         height: 18%;
+    }
+    .part_two{
+        width: 95%;
+    }
+}
+
+@media (max-width:500px){
+    .part_one{
+        padding: 10px;
+    }
+    .friend{
+        width: 100%;
+        min-width: 100%;
+        padding:1px;
     }
 }

@@ -1,4 +1,5 @@
 "use client"
+import Link from "next/link";
 import style from "./navbar.module.css"
 import Image from "next/image";
 import logo from "../../picture/logo-transparent.png"
@@ -23,11 +24,13 @@ const NavBar = () => {
         <p className={`${style.title}`}>STARSERVE</p>
 
         <div className={`${style.pack_header}`}>
+            <Link href={"/chat"}>
+                <div className={`${style.box}`}>
+                    <IoChatbubblesOutline size={20}/>
+                </div>
+            </Link>
             <div className={`${style.box}`}>
-                <IoChatbubblesOutline size={25}/>
-            </div>
-            <div className={`${style.box}`}>
-                <IoNotificationsOutline size={25}/>
+                <IoNotificationsOutline size={20}/>
             </div>
 
             <div className={`${style.dropdown}`}>
@@ -48,7 +51,7 @@ const NavBar = () => {
                 </div>
 
                
-                {dropdown && <DropDown />}
+                {dropdown && <DropDown dropdown={dropdown} setDropdown={setDropdown}/>}
 
             </div>
         </div>

@@ -2,23 +2,17 @@
 import style from "./serachF.module.css"
 import LooP from "../../picture/icons8-search-128.png"
 import Image from "next/image"
+import { Search } from "lucide-react"
 
 
-const Search = () => {
-    return <div>
+const Searcher = () => {
+    return <div className={style.makeit}>
                 <div className={style.search_section}>
-                    <div className={style.holders}>
-                        <Image
-                            src={LooP}
-                            height={100}
-                            width={300}
-                            className={`${style.im}`}
-                            alt="Profile random image"
-                        />
-                        <input className={style.email} placeholder="Search for friends..." type="text" />
-                    </div>
+                    <Search className={style.sicon} size={25} color="#48433E"/>
+                    
+                    <input className={style.email} placeholder="Search for friends..." type="text" />
                 </div>
     </div>;
 }
 
-export default Search;
+export default Searcher;
