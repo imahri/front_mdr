@@ -12,7 +12,8 @@ import { useState } from "react";
 const NavBar = () => {
     const [dropdown, setDropdown] =  useState(false);
     return <div className={style.containerS}>
-        <div className={style.logo}>
+        <Link href={"/dashboard"}>
+            <div className={style.logo}>
                 <Image
                     src={logo}
                     height={100}
@@ -21,7 +22,10 @@ const NavBar = () => {
                     alt="logo"
                 />
             </div>
-        <p className={`${style.title}`}>STARSERVE</p>
+        </Link>
+        <Link href={"/dashboard"}>
+            <p className={`${style.title}`}>STARSERVE</p>
+        </Link>
 
         <div className={`${style.pack_header}`}>
             <Link href={"/chat"}>

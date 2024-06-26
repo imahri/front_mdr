@@ -12,7 +12,7 @@ const ChatIn = () => {
                     height={100}
                     width={300}
                     alt="Profile image"
-                    className={style.im}
+                    className={`${style.im} ${style.image_drag}`}
                 />
             </div> 
             <div className={style.msg_tm}>

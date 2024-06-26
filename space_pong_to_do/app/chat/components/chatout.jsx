@@ -18,7 +18,7 @@ const ChatOut = () => {
                     height={100}
                     width={300}
                     alt="Profile image"
-                    className={style.im}
+                    className={`${style.im} ${style.image_drag}`}
                 />
             </div> 
 

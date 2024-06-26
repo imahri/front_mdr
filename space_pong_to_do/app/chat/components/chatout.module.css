@@ -46,3 +46,12 @@
         width: 55%;
     }
 }
+
+.image_drag{
+    -webkit-user-drag: none; /* Safari and Chrome */
+    -khtml-user-drag: none;  /* Konqueror */
+    -moz-user-drag: none;    /* Firefox */
+    -o-user-drag: none;      /* Opera */
+    user-drag: none;
+    cursor: pointer;
+}

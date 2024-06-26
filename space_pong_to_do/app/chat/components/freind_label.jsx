@@ -13,6 +13,7 @@ const Search = () => {
                             height={100}
                             width={300}
                             alt="Profile image"
+                            className={style.image_drag}
                         />
                     </div>
                     <div className={style.pa_holder}>

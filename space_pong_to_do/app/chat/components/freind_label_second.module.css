@@ -1,16 +1,17 @@
 .container{
-    width: 100%;
+    /* width: 100%; */
     border-radius: 15px;
     display: flex;
     align-items: center;
-    gap: 25px;
     cursor: pointer;
     overflow: hidden;
     transition: 0.5s;
-    color: white;
+    width: fit-content;
 }
 
-
+.container:hover{
+    background: #b7aa9c18;
+}
 
 .pi_holder{
     width: 80px;
@@ -18,31 +19,33 @@
     overflow: hidden;
     border-radius: 50%;
     outline: 1px solid white;
-    transition: 0.5s;
+}
+
+.pa_holder{
+    width: 250px;
+    overflow: hidden;
 }
 
 .username{
     font-size: 1.5rem;
     text-transform: capitalize;
-    font-weight: 600;
-    transition: 0.5s;
 }
 
-.container:hover{
-    background: linear-gradient(90deg, #9cb7b418 0%, #b7aa9c00 80%);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(10px);
+.lst_msg_holder{
+    display: flex;
+    gap: 2px;
 }
 
-
-.container:hover .pi_holder{
-    filter: drop-shadow(0 0 3px rgb(0, 191, 255));
+.lst_msg{
+    color: #B7AA9C;
+    width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
-
-
-.container:hover .username{
-    filter: drop-shadow(0 0 1px rgb(0, 191, 255));
+.lst_msg_time{
+    color: #B7AA9C;
 }
 
 .image_drag{
@@ -52,4 +55,12 @@
     -o-user-drag: none;      /* Opera */
     user-drag: none;
     cursor: pointer;
+}
+
+@media (max-width:800px) {
+    .pa_holder{
+        display: none;
+        visibility: hidden;
+    }
+    
 }
